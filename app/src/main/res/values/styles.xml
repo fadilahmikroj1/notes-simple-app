@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomAddBtn" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/CustomAddBtnShape</item>
+    </style>
+    <style name="CustomAddBtnShape" parent="">
+        <item name="cornerSize">50dp</item>
+    </style>
+</resources>

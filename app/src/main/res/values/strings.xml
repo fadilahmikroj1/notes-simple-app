@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Catatan</string>
+    <string name="add_note">Add Note</string>
+    <string name="title">Title</string>
+    <string name="text_review">Text Review</string>
+    <string name="note_date">Note Date</string>
+    <string name="isi_catatan">Isi Catatan</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="menu_1">Simpan</string>
+    <string name="char_count">0 Karakter</string>
+</resources>
