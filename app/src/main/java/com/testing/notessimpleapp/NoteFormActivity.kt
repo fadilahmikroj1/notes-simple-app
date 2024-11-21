@@ -20,6 +20,7 @@ class NoteFormActivity : AppCompatActivity() {
     private val titleInput by lazy { binding.noteTitleInput }
     private val descInput by lazy { binding.noteDescInput }
     private val charCountText by lazy { binding.charCount }
+    private val saveButton by lazy { binding.topAppBar.menu.findItem(R.id.menu1)}
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +30,7 @@ class NoteFormActivity : AppCompatActivity() {
         setupDateDisplay()
         setupFocusListeners()
         setupCharacterCount()
+        setupSaveButtonValidation()
     }
 
     private fun setupViewBinding() {
@@ -87,5 +89,29 @@ class NoteFormActivity : AppCompatActivity() {
 
             override fun afterTextChanged(s: Editable?) {}
         })
+    }
+
+    private fun setupSaveButtonValidation() {
+        val textWatcher = object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+
+            override fun afterTextChanged(s: Editable?) {
+                validateSaveButton()
+            }
+        }
+
+        titleInput.addTextChangedListener(textWatcher)
+        descInput.addTextChangedListener(textWatcher)
+
+        saveButton?.isEnabled = false
+    }
+
+    private fun validateSaveButton() {
+        val title = titleInput.text.toString().trim()
+        val description = descInput.text.toString().trim()
+
+        saveButton?.isEnabled = title.isNotBlank() || description.isNotBlank()
     }
 }
