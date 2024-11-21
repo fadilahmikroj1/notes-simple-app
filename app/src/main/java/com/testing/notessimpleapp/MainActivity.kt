@@ -1,4 +1,4 @@
-package com.testing.catatan
+package com.testing.notessimpleapp
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.testing.catatan.databinding.ActivityMainBinding
+import com.testing.notessimpleapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

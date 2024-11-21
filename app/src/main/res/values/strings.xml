@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Catatan</string>
+    <string name="app_name">Notes Simple App</string>
     <string name="add_note">Add Note</string>
     <string name="title">Title</string>
     <string name="text_review">Text Review</string>

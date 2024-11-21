@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.testing.catatan"
+    namespace = "com.testing.notessimpleapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.testing.catatan"
+        applicationId = "com.testing.notessimpleapp"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

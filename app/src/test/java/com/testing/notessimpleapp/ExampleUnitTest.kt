@@ -1,4 +1,4 @@
-package com.testing.catatan
+package com.testing.notessimpleapp
 
 import org.junit.Test
 

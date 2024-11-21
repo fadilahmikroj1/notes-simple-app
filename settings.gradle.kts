@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Catatan"
+rootProject.name = "Notes Simple App"
 include(":app")
  
